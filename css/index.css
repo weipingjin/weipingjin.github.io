@@ -1,0 +1,144 @@
+@media (min-width:1280px) {
+    .container {
+       max-width: 1280px ;
+    }
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #cdf1e3 !important;
+}
+.logo { 
+    font-size: 30px; 
+    font-weight: bold;
+    margin: 60px 25px 25px ; 
+    text-shadow: 1px 3px 3px #0a6da7, 1px 5px 5px #0a6da7; 
+    letter-spacing: .1em;
+}
+.logo a { 
+    color: #fff;
+    text-decoration: none; 
+}
+.logo a:hover{
+    color: #129dee;
+    text-decoration: underline;
+}
+nav { 
+    height: 60px;
+    margin: 45px 0 20px 0;
+    
+}
+#starlist li {
+    float: left;
+    margin-right: 20px;
+    
+}
+ #starlist li a  {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+    text-shadow: #43b1f1 2px 2px 3px;
+}
+#starlist li a:hover {
+    color: #129dee;
+    text-decoration: none;
+}
+.blogs { 
+    margin-bottom: 26px ; 
+} 
+ .blogs_list { 
+    position: relative;
+    background: rgba(255,255,255,.8); 
+    margin: 25px 0 20px 0; 
+    border-radius: 3px; 
+    padding: 22px;
+}
+.blogs_list a {
+    text-decoration: none; 
+    display: block; 
+    overflow: hidden; }
+.blogs_list i {
+    display: block;
+    width: 210px; 
+    height: 158px; 
+    background: #ccc;
+    overflow: hidden;
+    float: left; 
+    border-radius: 3px; 
+}
+.blogs_list i img { 
+    width: 100%; 
+    min-height: 100%; 
+    transition: all .6s; 
+}
+.blogs_list:hover {
+     background: rgba(255,255,255,1); 
+}
+.blogs_list:hover img { 
+    transform: scale(1.1); 
+}
+.blogs_list em {
+    display: block;
+    position: absolute;
+    background: rgba(0,0,0,.5);
+    z-index: 9;
+    color: #fff;
+    padding: 3px 8px;
+    margin:-5px 18px;
+    border-radius: 3px;
+    font-style: normal;
+    font-size: 14px;
+}
+.blogs_list h2{
+    position: absolute;
+    top: 12px;
+    left: 245px;
+    margin: 10px;
+    line-height: 28px;
+    font-size: 18px;
+    color: #43b1f1;
+}
+.blogs_list h2:hover{
+    color: #000;
+    text-decoration: underline;
+}
+.blogs_list p{
+    position: absolute;
+    top: 50px;
+    left: 253px;;
+    width: 300px;
+}
+.blogs_list p:hover{
+    text-decoration: underline;
+}
+.mycard {
+    height: 160px; 
+    background: rgba(255,255,255,.8); 
+    overflow: hidden; 
+    padding: 22px; 
+    z-index: 1; 
+    border-radius: 3px; 
+    margin-bottom: 22px;
+}
+.isgood_news { 
+    border-radius: 3px; 
+    background: rgba(255,255,255,.8); 
+    padding: 5px 20px 0; 
+    overflow: hidden; 
+}
+.isgood_news ul { 
+    padding: 10px 20px; 
+}
+.isgood_news li { 
+    margin: 24px 0; 
+    list-style-type: circle; 
+    margin-top: 5px; 
+}
+.isgood_news li:hover { 
+    text-decoration: underline;
+}
+
