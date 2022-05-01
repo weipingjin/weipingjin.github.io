@@ -1,0 +1,71 @@
+ul{
+    list-style: none;
+}
+@media  screen and (min-width:1280px){
+    .container {
+        max-width: 1280px ;
+        height: 2000px;
+     }
+}
+@media screen and (max-width:992px){
+    .list{
+        width: 30%;
+    }
+    .art{
+        width: 70%;
+    }
+}
+@media screen and (max-width:576px){
+    .list{
+        width: 100% !important;
+    }
+    .art{
+        width: 100% !important;
+    }
+
+}
+@media screen and (max-width:320px){
+    .list{
+        width: 100% !important;
+    }
+    .art{
+        width: 100% !important;
+    }
+}
+body {
+}
+.ado{
+    height: 265px;
+    background: url(../images/sd.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+#music{
+    display: block;
+    width: 60%;
+    margin: 83px auto;
+}
+.list{
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+.list ul li {
+    line-height: 40px;
+    padding-left: 10px;
+    color: rgba(0, 0, 0, 0.73);
+    background-color: #fff;
+    margin: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.list ul li i{
+    margin-right: 8px;
+    color: skyblue;
+   
+}
+.art{
+    padding: 15px ;
+}
+#demo{
+    overflow: hidden;
+    border-radius: 8px;
+}

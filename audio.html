@@ -1,12 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/audio.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.onload=function(){
+          var audio = document.getElementById('music');
+          document.onclick=function(){
+            audio.play();
+          }
+          var xiangshi = document.getElementById("xiangshi");
+          xiangshi.onclick = function(){
+              audio.src = "audio/相思.mp3";
+              audio.play();
+          }
+
+          var xue = document.getElementById("xue");
+          xue.onclick = function(){
+              audio.src = "audio/snow.mp3";
+              audio.play();
+          }
+          var hongde = document.getElementById("hongde");
+          hongde.onclick = function(){
+              audio.src = "audio/红豆.mp3";
+              audio.play();
+          }
+
+        }
+      </script>
+  
+    <title>歌单</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="row">
+            <header class="ado ">
+                <!-- 音频 -->
+                <audio controls id="music"  src="audio/相思.mp3" autoplay="true"></audio>
+            </header>
+            <div class="col-lg-3 list ">
+                <ul>
+                    <li id="xue"> <i class="bi bi-music-note-list"></i>  雪落下的声音</li>
+                    <li id="xiangshi"> <i class="bi bi-music-note-list" ></i>  相思</li>
+                    <li id="hongde"> <i class="bi bi-music-note-list" ></i>  红豆</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+            </div>
+            <div class="col-lg-9 art bg-secondary text-white">
+                <div>
+                    <!-- 轮播 -->
+                    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                        <!-- 指示符 -->
+                        <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        </div>
+                        <!-- 轮播图片 -->
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/1.webp" class="d-block" style="width:100%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/5.webp" class="d-block" style="width:100%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/4.webp" class="d-block" style="width:100%">
+                        </div>
+                        </div>
+                        <!-- 左右切换按钮 -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
