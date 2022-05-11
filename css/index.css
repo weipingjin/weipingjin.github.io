@@ -21,14 +21,20 @@
     }
 
     .atve{
-        width: 70%;
+        width: 70%!important;
     }
 }
 @media screen and (max-width:768px){
         #starlist li {
             margin-right: 31px !important;
         }
+        .webp {
+            width: 30% !important;
+        }
     
+        .atve{
+            width: 70%!important;
+        }
 } 
 @media screen and (max-width:576px){
     .tiem{
@@ -36,6 +42,10 @@
     }
     .webp {
         width: 100% !important;
+    }
+
+    .atve{
+        width: 100%!important;
     }
 
 
@@ -109,7 +119,7 @@ nav {
     margin-bottom: 30px ; 
 } 
 .mycard{
-    height: 160px; 
+    height: 167px; 
     background: rgba(247, 243, 247, 0.806); 
     overflow: hidden; 
     padding: 22px; 
@@ -181,7 +191,12 @@ nav {
 }
 .atve h5{
     margin-top: 13px;
-} 
+}
+.carousel-innerbox{
+    padding: 20px;
+    background: rgba(247, 243, 247, 0.806);
+    border-radius: 5px;
+}
 .carousel-inner{
-    border-radius: 10px;
+    border-radius: 5px;
 }
