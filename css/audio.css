@@ -38,12 +38,14 @@ a{
 body {
 }
 .htmleaf-links a{
-    color: #666;
+    display: block;
+    color: #fff;
+    padding: 2%;
 
 }
 .ado{
     height: 265px;
-    background: url(../images/sd.jpg) no-repeat;
+    background: url(../images/6_01.jpg) no-repeat;
     background-size: 100% 100%;
 }
 #music{
@@ -53,7 +55,8 @@ body {
 }
 .list{
     padding: 10px;
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
+    background: url(../images/15.jpg);
 }
 .list ul li {
     line-height: 40px;
